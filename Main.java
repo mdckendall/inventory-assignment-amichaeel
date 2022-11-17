@@ -36,18 +36,18 @@ class Main {
 
 			switch(choice) {
 				case 1:
-				System.out.println("Enter the new name:");
+				System.out.println("Enter the name:");
 				name = scanner.nextLine();
 				System.out.println("Enter the serial number:");
 				serial = scanner.nextLine();
-				System.out.println("Enter the new value in dollars (whole number):");
+				System.out.println("Enter the value in dollars (whole number):");
 				value = scanner.nextInt();
 				scanner.nextLine();
 				inventory.add(new Inventory(name, serial, value));
 				break;
 
 				case 2:
-				System.out.println("Enter the serial number for item to delete:");
+				System.out.println("Enter the serial number of the item to delete:");
 				serial = scanner.nextLine();
 				for (int i = 0; i < inventory.size(); i++) {
 					if (inventory.get(i).serial.equals(serial)) {
@@ -66,7 +66,6 @@ class Main {
 						inventory.get(i).name = name;
 						System.out.println("Enter the new value in dollars (whole number):");
 						value = scanner.nextInt();
-						scanner.nextLine();
 						inventory.get(i).value = value;
 					}
 				}
