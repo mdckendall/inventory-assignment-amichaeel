@@ -61,7 +61,7 @@ class Main {
 				serial = scanner.nextLine();
 				for (int i = 0; i < inventory.size(); i++) {
 					if (inventory.get(i).serial.equals(serial)) {
-						System.out.println("Enter a new name:");
+						System.out.println("Enter the new name:");
 						name = scanner.nextLine();
 						inventory.get(i).name = name;
 						System.out.println("Enter the new value in dollars (whole number):");
