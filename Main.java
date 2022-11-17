@@ -36,11 +36,11 @@ class Main {
 
 			switch(choice) {
 				case 1:
-				System.out.println("Enter the name:");
+				System.out.println("Enter the new name:");
 				name = scanner.nextLine();
 				System.out.println("Enter the serial number:");
 				serial = scanner.nextLine();
-				System.out.println("Enter the value in dollars (whole number):");
+				System.out.println("Enter the new value in dollars (whole number):");
 				value = scanner.nextInt();
 				scanner.nextLine();
 				inventory.add(new Inventory(name, serial, value));
